@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Platform Arena - Jeu de Plateforme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1>🎮 PLATFORM ARENA</h1>
+    <div class="lobby" id="lobby">
+      <div class="lobby-buttons">
+        <button id="btnCreate" class="big-button create">✨ CRÉER UNE PARTIE</button>
+        <button id="btnJoin" class="big-button join">🔗 REJOINDRE UNE PARTIE</button>
+      </div>
+      <div id="lobbyCode" class="hidden"></div>
+      <p id="lobbyHint" class="hint">Attends qu'un ami te donne un code de partie !</p>
+      <ul id="playerList"></ul>
+      <p>Joueurs : <span id="playerCount">0</span></p>
+      <button id="btnStart" class="big-button start hidden">▶️ DÉMARRER LA PARTIE</button>
+    </div>
+    <div class="game hidden" id="game">
+      <canvas id="gameCanvas"></canvas>
+      <div id="roleBadge" class="badge">🏃 Évite le porteur de bombe !</div>
+      <div class="toast" id="toast"></div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
